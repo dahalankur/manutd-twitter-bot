@@ -67,7 +67,7 @@ def main():
     try:
         twitter_api.update_status(tweet)
         print(tweet)
-    except tweepy.error as e:
+    except tweepy.TweepError as e:
         print(e.reason)
 
 
